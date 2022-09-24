@@ -31,7 +31,7 @@ const mujmalRecipes = [
   },
   {
     id: 5,
-    name: "Seafood Paella",
+    name: "Seafood",
     img: "5",
     url: "",
   },
