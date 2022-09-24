@@ -8,7 +8,8 @@
     "compile:sass": "sass public/sass/main.scss public/css/styles.css -w",
     "conpile:nodemon": "nodemon app.js",
     "start": "concurrently \"npm run compile:sass\" \"npm run conpile:nodemon\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "heroku": "node app.js"
     
   },
   "author": "",
