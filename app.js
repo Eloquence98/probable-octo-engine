@@ -62,6 +62,14 @@ app.get("/recipes", (req, res) => {
   });
 });
 
+app.get("/mission", (req, res) => {
+  res.render("pages/mission");
+});
+
+app.get("/about", (req, res) => {
+  res.render("pages/about");
+});
+
 app.get("/profiles", (req, res) => {
   res.render("pages/profiles");
 });

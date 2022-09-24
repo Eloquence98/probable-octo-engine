@@ -62,6 +62,10 @@ body {
   margin: 0 auto;
 }
 
+p {
+  color: hsl(0deg, 0%, 100%);
+}
+
 button {
   outline: none !important;
   border: none;
@@ -223,6 +227,13 @@ button i {
   font-size: 2rem;
 }
 
+P {
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.75rem;
+}
+
 .product__container,
 .recipe__container,
 .showcase__container,
@@ -378,6 +389,11 @@ button i {
 
 .page-start {
   margin-top: 21.25rem;
+}
+
+.stats {
+  margin: 2.5rem 0 0;
+  width: 45rem;
 }
 
 .review-tag {
@@ -700,11 +716,6 @@ button i {
   margin-right: 8rem;
 }
 
-.stats {
-  margin: 2.5rem 0 0;
-  width: 45rem;
-}
-
 .recipe__detail {
   margin-top: 3.25rem;
 }
@@ -846,6 +857,9 @@ button i {
 }
 .navbar__left__menu .flex {
   gap: 4rem;
+}
+.navbar__right {
+  display: none;
 }
 .navbar__right.flex {
   gap: 2rem;

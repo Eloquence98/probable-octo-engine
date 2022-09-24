@@ -43,6 +43,7 @@ $navbar-display: flex;
   }
 
   &__right {
+    display: none;
     &.flex {
       gap: 2rem;
     }
