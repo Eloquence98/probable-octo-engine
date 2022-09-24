@@ -1,0 +1,47 @@
+<div class="recipe__container grid">
+  <div class="recipe__container__left">
+    <div class="recipe ">
+      <div class="recipe__name to-top">
+        <h1 class="heading heading2"> <%= recipes[num].name %> </h1>
+      </div>
+    </div>
+
+    <div class="stats to-top">
+      <p>Put the Mom in Momosa with this sweet Mimosa inspired French toast.</p>
+    </div>
+    <div class="stats to-top">
+      <p>
+        Delicius easy to make serves 4 people. Lorem ipsum dolor sit amet,
+        consectetur.
+      </p>
+    </div>
+    <div class="recipe__detail">
+      <div class="recipe__detail__tag flex to-top">
+        <div class="tag flex">
+          <img src="/images/icons/Time.png" alt="" />
+          <p>25 MIN</p>
+        </div>
+        <div class="tag flex">
+          <img src="/images/icons/Serce.png" alt="" />
+          <p>4</p>
+        </div>
+      </div>
+
+      <div class="tag__container to-top">
+        <p class="title">Tag</p>
+        <div class="tag__wrapper flex">
+          <span class="tag">Italian</span>
+          <span class="tag">Pescatarian</span>
+          <span class="tag">Vegitarian</span>
+          <span class="tag">Breackfast & brunch</span>
+          <span class="tag">Air Fryer</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="recipe__container__right">
+    <div class="home-page-image-wrapper to-top">
+      <img class="to-top" src= "<%="/images/recipes/" +recipes[num].imageUrl + recipes[num].format %>"  alt="image" />
+    </div>
+  </div>
+</div>

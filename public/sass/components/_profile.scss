@@ -1,0 +1,9 @@
+.profile {
+  width: 22.75rem;
+
+  background: $dark;
+  background: $gray4;
+  background: $gray6;
+  backdrop-filter: blur(80px);
+  /* Note: backdrop-filter has minimal browser support */
+}

@@ -1,0 +1,72 @@
+<!-- head -->
+<%- include("../partials/header") -%>
+
+<!-- navbar -->
+<%- include("../partials/navbar") -%>
+
+<section class="products-wrapper page-start">
+    <div class="products-search flex">
+        <form class="product-search-form">
+             <div class="product-searchbox searchbox flex">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                <input type="search" name="" id="">
+             </div>
+        </form>
+        <div class="filter">
+            <a class="navbar-icon" href="#filter"><i class="fa-solid fa-filter"></i></a>
+        </div>
+    </div>
+    <div class="meproducts-cards-wrapper">
+        <div class="product-card"></div>
+    </div>
+</section>
+
+<!-- cards -->
+
+<section class="cards">
+    
+    <div class="cards-wrapper">
+        <% for (let i = 0; i < 6; i++) { %>
+        
+            <div class="card-container">
+                <div class="card_detail">
+                    <div class="name_cart_container">
+                        <h1>Pro dehyderator</h1>
+                        <div class="forcart">
+                            <a class="navbar-icon" href="#"><img class="navbar-icon__icon" src="images/icons/Shopping-bag.png"
+                                alt="cart" /></a>
+                        </div>
+                    </div>
+        
+                    <h2>With 2 years of warranty</h2>
+                    <p>6 month freeze</p>
+                </div>
+                
+                <div class="product_card_img_container">
+                    <div class="product_card_img"></div>
+                    <!-- <img class="product_card_im" src="/Rectan.png" alt=""> -->
+                </div>
+        
+                <div class="price_buy_container">
+                    <div class="price_container">
+                        <p>Total price</p>
+                        <p class="price">$199</p>
+                    </div>
+        
+                    <button class="buy_now_card">Buy now</button>
+                </div>
+        
+            </div>
+            
+            
+        <% }; %>
+    </div>
+    
+    
+    
+    
+    
+</section>
+
+<!-- foot -->
+<%- include("../partials/bodyFooter") -%>

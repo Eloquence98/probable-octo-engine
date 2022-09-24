@@ -1,0 +1,956 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&family=Lexend:wght@100;200;300;400;500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap");
+.animateFromBottom {
+  position: relative;
+  animation: bottomToTop 1.7s cubic-bezier(0.25, 1, 0.25, 1);
+}
+
+.animateFromTop {
+  position: relative;
+  animation: topToBottom 1.7s cubic-bezier(0.25, 1, 0.25, 1);
+}
+
+@keyframes bottomToTop {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes topToBottom {
+  0% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+}
+.is-anime.animateFromBottom {
+  animation: bottomToTop 2.1s cubic-bezier(0.25, 1, 0.25, 1);
+}
+
+.navbar-animate.animateFromTop {
+  animation: topToBottom 2.1s cubic-bezier(0.25, 1, 0.25, 1);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+a:focus {
+  outline: none !important;
+}
+a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+body {
+  background: hsl(0deg, 0%, 8%);
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+button {
+  outline: none !important;
+  border: none;
+  background: transparent;
+}
+button:hover {
+  cursor: pointer;
+}
+button i {
+  font-size: 2.5rem;
+  color: hsla(0deg, 0%, 100%, 0.4);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: hsl(0deg, 0%, 100%);
+}
+
+html {
+  font-size: 75%;
+  /* this should work on safari latest version 15.4 (March 14, 2022) */
+  scroll-behavior: smooth;
+}
+
+img {
+  color: hsla(0deg, 0%, 100%, 0.4);
+  width: 100%;
+}
+
+label {
+  color: hsl(0deg, 0%, 100%);
+  font-family: "Lexend", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height */
+}
+
+input {
+  outline: none;
+  margin: 0;
+}
+input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+input:-moz-placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+input:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+input:focus {
+  border-color: transparent !important;
+}
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+input:focus:-moz-placeholder {
+  color: transparent;
+}
+input:focus::-moz-placeholder {
+  color: transparent;
+}
+input:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+textarea {
+  border: none;
+  outline: none;
+  margin: 0;
+  display: block;
+  resize: none;
+}
+textarea::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+textarea:-moz-placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+textarea::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+textarea:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+textarea:focus {
+  border-color: transparent !important;
+}
+textarea:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+textarea:focus:-moz-placeholder {
+  color: transparent;
+}
+textarea:focus::-moz-placeholder {
+  color: transparent;
+}
+textarea:focus:-ms-input-placeholder {
+  color: transparent;
+}
+textarea::-webkit-scrollbar {
+  display: none;
+}
+
+input,
+textarea {
+  box-sizing: border-box;
+  width: 100%;
+  background: rgba(196, 196, 196, 0.04);
+  border: 2px solid rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(80px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 10px;
+  padding: 1.5rem 1.58rem;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
+  color: rgba(255, 255, 255, 0.4);
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  line-height: 1.5;
+}
+
+a {
+  font-family: "Quicksand", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+button i {
+  font-size: 2rem;
+}
+
+.product__container,
+.recipe__container,
+.showcase__container,
+.review__container {
+  color: hsl(0deg, 0%, 100%);
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.75rem;
+}
+
+.product__stats {
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.75rem;
+  line-height: 140%;
+}
+
+.heading {
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.title {
+  color: rgba(255, 255, 255, 0.4);
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.5rem;
+}
+
+.heading1 {
+  color: hsl(0deg, 0%, 100%);
+  font-family: "Kumbh Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 6rem;
+  line-height: 98%;
+  text-transform: uppercase;
+}
+
+.heading2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.5rem;
+  line-height: 4.25rem;
+  max-width: 52rem;
+}
+
+.date {
+  color: hsla(0deg, 0%, 100%, 0.6);
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 1.4rem;
+  /* identical to box height */
+}
+
+.ancher {
+  position: relative;
+  color: hsla(0deg, 0%, 100%, 0.4);
+  display: inline-block;
+  font-family: "Lexend";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 30px;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.ancher:hover {
+  color: hsl(45deg, 100%, 82%);
+}
+.ancher::after {
+  content: "";
+  position: absolute;
+  bottom: -0.8rem;
+  left: 50%;
+  height: 0.2rem;
+  width: 1.5rem;
+  background-color: transparent;
+  transform: translateX(-50%);
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.ancher:hover::after {
+  background-color: hsl(45deg, 100%, 82%);
+}
+
+.navbar-icon {
+  color: hsla(0deg, 0%, 100%, 0.4);
+  border-radius: 0.5rem;
+  display: inline-block;
+  padding: 0.9rem 0.9rem 0.5rem;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.navbar-icon i {
+  font-size: 2.5rem;
+}
+.navbar-icon__icon {
+  width: 3rem;
+}
+.navbar-icon:hover {
+  background-color: hsl(0deg, 0%, 13%);
+  color: hsl(45deg, 100%, 82%);
+}
+.navbar-icon.navbar-icon-active {
+  background-color: hsl(0deg, 0%, 13%);
+  color: hsl(45deg, 100%, 82%);
+}
+
+.tag__container {
+  margin-top: 6.25rem;
+}
+
+.tag__wrapper {
+  margin-top: 2.75rem;
+}
+.tag__wrapper.flex {
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.review-tag-wrapper {
+  margin-top: 2.5rem;
+}
+.review-tag-wrapper.flex {
+  justify-content: flex-start;
+  gap: 2.7rem;
+}
+
+.tag {
+  color: hsl(0deg, 0%, 100%);
+  padding: 12px 16px;
+  background: rgba(176, 163, 255, 0.04);
+  border: 2px solid rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(80px);
+  border-radius: 10px;
+}
+.tag.flex {
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.tag img {
+  display: block;
+  height: 2rem;
+  width: 2rem;
+}
+
+.page-start {
+  margin-top: 21.25rem;
+}
+
+.review-tag {
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  /* identical to box height */
+}
+
+.input-tag {
+  background: rgba(196, 196, 196, 0.04);
+  border: 2px solid rgba(255, 255, 255, 0.06);
+  border-radius: 10px;
+}
+
+.tag-active {
+  background-color: hsl(45deg, 100%, 82%);
+  color: hsl(0deg, 0%, 8%);
+}
+.tag-active .dot {
+  background-color: hsl(0deg, 0%, 8%);
+}
+
+.searchbox {
+  background: rgba(176, 163, 255, 0.04);
+  border: 2px solid transparent;
+  backdrop-filter: blur(80px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 10px;
+  padding: 0 0 0 1rem;
+}
+.searchbox input {
+  background: transparent;
+  backdrop-filter: initial;
+  border: none;
+}
+.searchbox:active, .searchbox:focus {
+  border: 2px solid rgba(255, 255, 255, 0.06);
+}
+
+.dot {
+  background-color: hsl(0deg, 0%, 100%);
+  border-radius: 50%;
+  margin-right: 10px;
+  height: 5px;
+  width: 5px;
+}
+
+.price {
+  color: hsl(0deg, 0%, 100%) !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 2.25rem !important;
+  line-height: 140% !important;
+}
+
+/* Flex and Grid */
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.buy-button {
+  background: hsl(45deg, 100%, 82%);
+  border-radius: 1rem;
+  color: hsl(0deg, 0%, 8%);
+  display: inline-block;
+  width: 260px;
+  height: 60px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+}
+
+.checkout-button {
+  background: hsla(248deg, 100%, 82%, 0.04);
+  border: 0.1rem solid hsla(0deg, 0%, 100%, 0.06);
+  backdrop-filter: blur(160px);
+  border-radius: 0.9rem;
+  display: inline-block;
+  padding: 10px 16px 7px;
+}
+
+.quantity-button {
+  font-family: serif;
+  font-style: normal;
+  font-size: 2rem;
+  line-height: 1.8rem;
+  background: hsla(248deg, 100%, 82%, 0.04);
+  color: hsl(0deg, 0%, 100%);
+  border: 0.2rem solid hsla(0deg, 0%, 100%, 0.06);
+  backdrop-filter: blur(160px);
+  border-radius: 0.3rem;
+  width: 3rem;
+  height: 3rem;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  background: rgba(26, 26, 26, 0.72);
+  backdrop-filter: blur(80px);
+  border-radius: 10px;
+  padding: 32px;
+}
+
+.card-container h1 {
+  font-family: "Kumbh Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  /* identical to box height */
+  color: hsl(0deg, 0%, 100%);
+}
+
+.name_cart_container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 1px;
+}
+
+.name_cart_container h1 {
+  font-size: 26px;
+}
+
+.card-container h2 {
+  margin-bottom: 4px;
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.card-container p {
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.56);
+}
+
+.product_card_img_container {
+  width: 100%;
+  height: 224px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.product_card_img {
+  height: 100%;
+  width: 100%;
+  background-image: url("/images/review-image1.png");
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.price_container {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.buy_now_card {
+  background-color: #ffe8a3;
+  color: #141414;
+  font-weight: 700;
+  font-size: 18px;
+  min-width: 170px;
+  min-height: 60px;
+  border-radius: 10px;
+}
+
+.price_buy_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mujmal-recipe-card {
+  width: 17.5rem;
+  height: 17.25rem;
+}
+.mujmal-recipe-card.flex {
+  flex-direction: column;
+}
+.mujmal-recipe-card__image {
+  position: relative;
+  height: 12.75rem;
+  width: 12.75rem;
+}
+.mujmal-recipe-card__image .itself-image {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+}
+.mujmal-recipe-card__name {
+  font-family: "Kumbh Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  /* identical to box height */
+  text-align: center;
+  color: hsl(0deg, 0%, 100%);
+}
+.mujmal-recipe-card__name p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  resize: none;
+  width: 17.5rem;
+}
+
+.contact__form__container.flex {
+  gap: 4.75rem;
+}
+
+.contact-form-image-wrapper {
+  max-height: 59.25rem;
+  max-width: 50.25rem;
+}
+
+.form-top {
+  max-width: 36.5rem;
+}
+
+.form-p {
+  color: hsl(0deg, 0%, 100%);
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.9rem;
+  line-height: 150%;
+  /* or 36px */
+  margin-top: 4.25rem;
+}
+
+.form-bottom {
+  margin-top: 4.75rem;
+}
+
+.form-row {
+  margin-top: 2.75rem;
+}
+
+.form-group {
+  width: 43.5rem;
+}
+
+.recipe__container {
+  color: hsl(0deg, 0%, 100%);
+  margin-top: 3.25rem;
+}
+.recipe__container__right.flex {
+  justify-content: flex-end;
+  margin-right: 8rem;
+}
+
+.price-and-stars {
+  margin-top: 3.5rem;
+}
+.price-and-stars.flex {
+  justify-content: flex-start;
+  gap: 2.7rem;
+}
+
+.products-search.flex {
+  justify-content: space-between;
+}
+
+.cards-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(401px, 1fr));
+  gap: 3.5rem;
+  justify-content: space-between;
+  margin-bottom: 5rem;
+}
+
+.cards-wrapper.flex {
+  gap: 2.5rem;
+}
+
+.profile {
+  width: 22.75rem;
+  background: hsl(0deg, 0%, 8%);
+  background: hsla(0deg, 0%, 100%, 0.4);
+  background: hsla(0deg, 0%, 100%, 0.6);
+  backdrop-filter: blur(80px);
+  /* Note: backdrop-filter has minimal browser support */
+}
+
+.recipe__container {
+  color: hsl(0deg, 0%, 100%);
+  margin-top: 3.25rem;
+}
+.recipe__container__right.flex {
+  justify-content: flex-end;
+  margin-right: 8rem;
+}
+
+.stats {
+  margin: 2.5rem 0 0;
+  width: 45rem;
+}
+
+.recipe__detail {
+  margin-top: 3.25rem;
+}
+
+.recipe__detail__tag.flex {
+  justify-content: flex-start;
+  gap: 2.7rem;
+}
+
+.mujmal-recipes {
+  margin-top: 10.75em;
+}
+.mujmal-recipes.flex {
+  gap: 50px;
+}
+
+.review__container {
+  color: hsl(0deg, 0%, 100%);
+  margin-top: 3.25rem;
+}
+.review__container__right.flex {
+  justify-content: flex-end;
+  margin-right: 8rem;
+}
+
+.review-vote {
+  margin-top: 4.5rem;
+}
+
+.showcase__container {
+  color: rgba(255, 255, 255, 0.6);
+}
+.showcase__container__left.flex {
+  justify-content: flex-end;
+  margin-right: 8rem;
+}
+
+.product .flex {
+  justify-content: flex-start;
+}
+.product__reviews {
+  margin: 0.8rem 0 0;
+}
+.product__stats {
+  margin: 2.75rem 0 0;
+  width: 45rem;
+}
+.product__buy {
+  margin-top: 4.75rem;
+}
+.product__properties {
+  margin-top: 2.75rem;
+}
+.product__properties.flex {
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 7.25rem;
+}
+.product__cta {
+  margin-top: 58px;
+}
+.product__cta.flex {
+  justify-content: flex-start;
+  gap: 2.5rem;
+}
+
+.quantity-form {
+  color: hsl(0deg, 0%, 100%);
+  height: 37.797px;
+  margin-top: 1.7rem;
+}
+.quantity-form.flex {
+  gap: 1.7rem;
+}
+
+.colors {
+  margin-top: 1.7rem;
+  height: 37.797px;
+}
+.colors.flex {
+  gap: 1.25rem;
+}
+.colors div {
+  position: relative;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 50%;
+  background-color: white;
+}
+.colors div.white {
+  background-color: hsl(0deg, 100%, 100%);
+}
+.colors div.black {
+  background-color: hsl(0deg, 0%, 14%);
+}
+.colors div::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 36px;
+  height: 36px;
+  background: rgba(20, 20, 20, 0.72);
+  transform: translate(24%, 24%);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.header-animate {
+  opacity: 1;
+  display: flex;
+  -webkit-transition: all 0.8s cubic-bezier(0.25, 1, 0.25, 1);
+  transition: all 0.8s cubic-bezier(0.25, 1, 0.25, 1);
+}
+
+.navbar {
+  background: hsla(0deg, 0%, 10%, 0.72);
+  backdrop-filter: blur(160px);
+  border-radius: 1.4rem;
+  margin-top: 4.67rem;
+  margin-left: auto;
+  margin-right: auto;
+  height: 8rem;
+  width: calc(100% - 120px);
+  padding: 2.83rem 5.83rem;
+  z-index: 999;
+}
+.navbar.flex {
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+.navbar__left.flex {
+  gap: 8.34rem;
+}
+.navbar__left__logo .logo {
+  width: 6.25rem;
+}
+.navbar__left__menu .flex {
+  gap: 4rem;
+}
+.navbar__right.flex {
+  gap: 2rem;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  height: 8rem;
+  transform: translateX(-50%);
+}
+
+.footer {
+  position: relative;
+}
+.footer-logo {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.footer_subheading_cont.flex {
+  justify-content: space-between;
+}
+
+.lower_footer_details {
+  margin-top: 9px;
+}
+.lower_footer_details.flex {
+  justify-content: space-between;
+}
+
+.footer-logo {
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+.footer-logo.flex {
+  flex-direction: column;
+  gap: 1.25rem;
+  justify-content: flex-end;
+}
+.footer-logo .logo {
+  height: 4rem;
+  width: 5.62rem;
+}
+
+.a-tag a.flex {
+  gap: 0.85rem;
+}
+.a-tag a:link, .a-tag a:visited, .a-tag a:hover {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: hsl(0deg, 0%, 100%);
+}
+
+.copyright {
+  color: hsl(0deg, 0%, 100%);
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  text-transform: uppercase;
+}
+
+section {
+  margin: auto auto 0;
+  margin-top: 7.5rem;
+  max-width: 116.75em;
+}
+section.showcase {
+  margin-top: 16.5rem;
+}
+section.recipe, section.product, section.review, section.contactForm, section.footer-section {
+  margin-top: 14.75rem;
+}
+section.footer-section {
+  margin-bottom: 7.25rem;
+}
+
+.home-page-image-wrapper {
+  height: 55rem;
+  width: 46.25rem;
+}
+.home-page-image-wrapper img {
+  width: 100% !important;
+}
+
+.product__container.grid,
+.recipe__container.grid,
+.review__container.grid {
+  grid-template-columns: 1fr 42%;
+}
+
+.product__container__right,
+.recipe__container__right,
+.review__container__right {
+  justify-self: flex-end;
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&family=Lexend:wght@100;200;300;400;500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+// font-family: 'Inter', sans-serif;
+// font-family: 'Kumbh Sans', sans-serif;
+// font-family: 'Lexend', sans-serif;
+// font-family: 'Quicksand', sans-serif;
+
+body {
+  font-family: "Quicksand", sans-serif;
+  line-height: 1.5;
+}
+
+a {
+  font-family: "Quicksand", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+button {
+  i {
+    font-size: 2rem;
+  }
+}
+
+.product__container,
+.recipe__container,
+.showcase__container,
+.review__container {
+  color: $light;
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.75rem;
+}
+
+.product__stats {
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.75rem;
+  line-height: 140%;
+}
+
+.heading {
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.title {
+  color: rgba(255, 255, 255, 0.4);
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.5rem;
+}
+
+.heading1 {
+  color: $light;
+  font-family: "Kumbh Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 6rem;
+  line-height: 98%;
+  text-transform: uppercase;
+}
+
+.heading2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.5rem;
+  line-height: 4.25rem;
+  max-width: 52rem;
+}
+
+.date {
+  color: $gray6;
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 1.4rem;
+  /* identical to box height */
+}

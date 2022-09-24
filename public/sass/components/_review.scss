@@ -1,0 +1,17 @@
+.review__container {
+  color: $light;
+  margin-top: 3.25rem;
+
+  &__right {
+    &.flex {
+      justify-content: flex-end;
+      margin-right: 8rem;
+    }
+  }
+}
+
+.review-vote {
+  margin-top: 4.5rem;
+}
+
+

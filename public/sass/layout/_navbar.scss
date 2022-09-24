@@ -1,0 +1,61 @@
+$navbar-opacity: 1;
+$navbar-display: flex;
+
+.header-animate {
+  opacity: $navbar-opacity;
+  display: $navbar-display;
+  @include navbarScrollAnimation;
+}
+
+.navbar {
+  background: $navbar-dark;
+  backdrop-filter: blur(160px);
+  border-radius: 1.4rem;
+  margin-top: 4.67rem;
+  margin-left: auto;
+  margin-right: auto;
+  height: 8rem;
+  width: calc(100% - 120px);
+  padding: 2.83rem 5.83rem;
+  z-index: 999;
+
+  &.flex {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 60px;
+  }
+
+  &__left {
+    &.flex {
+      gap: 8.34rem;
+    }
+
+    &__logo {
+      .logo {
+        width: 6.25rem;
+      }
+    }
+    &__menu {
+      & .flex {
+        gap: 4rem;
+      }
+    }
+  }
+
+  &__right {
+    &.flex {
+      gap: 2rem;
+    }
+  }
+}
+
+// stickynavbar
+.sticky {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  height: 8rem;
+
+  transform: translateX(-50%);
+}

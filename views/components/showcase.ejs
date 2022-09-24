@@ -1,0 +1,68 @@
+<div class="showcase__container grid">
+  <div class="showcase__container__left flex">
+    <div class="product-image">
+      <img
+        class=""
+        src="<%=`/images/products/${products[product].imageUrl}.png`%>"
+        alt="image"
+      />
+    </div>
+  </div>
+  <div class="showcase__container__right">
+    <div class="product">
+      <h1 class="heading heading1"><%= products[product].name %></h1>
+
+      <div class="product__reviews">
+        <p>1k + reviews</p>
+        <div class="product__reviews__stars">
+          <p>stars should appear here</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="product__stats">
+      <p><%= products[product].tagLine %></p>
+    </div>
+
+    <div class="product__properties flex">
+      <div class="product__quantity">
+        <p>Quantity</p>
+        <form action="" class="quantity-form flex">
+          <button class="quantity-button flex">
+            <i
+              class="fa fa-minus"
+              aria-hidden="true"
+              style="font-size: 1.3rem"
+            ></i>
+          </button>
+          <p>1</p>
+          <button class="quantity-button">
+            <i class="fa-thin fa-plus"></i>
+          </button>
+          <p class="price">$ <%= products[product].price %></p>
+        </form>
+      </div>
+
+      <div class="product__color">
+        <p>Color</p>
+        <div class="colors flex">
+          <% products[product].colors.map((color) => { %>
+          <div class="<%= color %>"></div>
+          <% }); %>
+        </div>
+      </div>
+    </div>
+
+    <div class="product__cta flex">
+      <form action="" class="cta-buy">
+        <button class="buy-button">Buy now</button>
+      </form>
+
+      <form action="" class="cta-cart">
+        <button class="checkout-button">
+          <img src="/images/icons/Shopping-bag-big.png" alt="" />
+        </button>
+      </form>
+    </div>
+  </div>
+</div>

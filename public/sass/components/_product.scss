@@ -1,0 +1,44 @@
+.recipe__container {
+  color: $light;
+  margin-top: 3.25rem;
+
+  &__right {
+    &.flex {
+      justify-content: flex-end;
+      margin-right: 8rem;
+    }
+  }
+}
+
+.price-and-stars {
+  margin-top: 3.5rem;
+  &.flex {
+    justify-content: flex-start;
+    gap: 2.7rem;
+  }
+}
+
+// product page
+// .products-wrapper {
+//   margin-top: 21.25rem;
+// }
+
+.products-search.flex {
+  justify-content: space-between;
+}
+
+.cards-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(401px, 1fr));
+  gap: 3.5rem;
+  justify-content: space-between;
+  margin-bottom: 5rem;
+}
+
+// .cards-wrapper.flex {
+//   flex-wrap: wrap;
+// }
+
+.cards-wrapper.flex {
+  gap: 2.5rem;
+}

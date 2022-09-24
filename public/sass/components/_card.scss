@@ -1,0 +1,136 @@
+// product card
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  background: rgba(26, 26, 26, 0.72);
+  backdrop-filter: blur(80px);
+  border-radius: 10px;
+  padding: 32px;
+}
+
+.card-container h1 {
+  font-family: "Kumbh Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  /* identical to box height */
+
+  color: $light;
+}
+
+.name_cart_container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 1px;
+}
+
+.name_cart_container h1 {
+  font-size: 26px;
+}
+
+.card-container h2 {
+  margin-bottom: 4px;
+
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.card-container {
+  p {
+    font-family: "Quicksand", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+
+    color: rgba(255, 255, 255, 0.56);
+  }
+}
+
+.product_card_img_container {
+  width: 100%;
+  height: 224px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.product_card_img {
+  height: 100%;
+  width: 100%;
+  background-image: url("/images/review-image1.png");
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.price_container {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.buy_now_card {
+  background-color: #ffe8a3;
+  color: #141414;
+  font-weight: 700;
+  font-size: 18px;
+  min-width: 170px;
+  min-height: 60px;
+  border-radius: 10px;
+}
+
+.price_buy_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+// product card ends
+
+// mujmal recipe card
+
+.mujmal-recipe-card {
+  width: 17.5rem;
+  height: 17.25rem;
+
+  &.flex {
+    flex-direction: column;
+  }
+  &__image {
+    position: relative;
+    height: 12.75rem;
+    width: 12.75rem;
+    .itself-image {
+      // background-image: url(/images/recipes/1.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      height: 100%;
+      width: 100%;
+    }
+  }
+  &__name {
+    font-family: "Kumbh Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+    /* identical to box height */
+    text-align: center;
+    color: $light;
+
+    p {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      resize: none;
+      width: 17.5rem;
+    }
+  }
+}

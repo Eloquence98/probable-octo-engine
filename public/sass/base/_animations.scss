@@ -1,0 +1,39 @@
+.animateFromBottom {
+  position: relative;
+  animation: bottomToTop 1.7s cubic-bezier(0.25, 1, 0.25, 1);
+}
+
+.animateFromTop {
+  position: relative;
+  animation: topToBottom 1.7s cubic-bezier(0.25, 1, 0.25, 1);
+}
+
+@keyframes bottomToTop {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes topToBottom {
+  0% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+}
+
+.is-anime.animateFromBottom {
+  animation: bottomToTop 2.1s cubic-bezier(0.25, 1, 0.25, 1);
+}
+
+.navbar-animate.animateFromTop {
+  animation: topToBottom 2.1s cubic-bezier(0.25, 1, 0.25, 1);
+}

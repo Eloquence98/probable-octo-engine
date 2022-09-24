@@ -1,0 +1,49 @@
+<!-- head -->
+<%- include("../partials/header") -%>
+
+    <!-- navbar -->
+    <%- include("../partials/navbar") -%>
+
+
+        <!-- recipe -->
+        <section class="recipe-wrapper page-start">
+            
+            <div class="products-search flex">
+                <form class="product-search-form">
+                     <div class="product-searchbox searchbox flex">
+                        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                        <input type="search" name="" id="">
+                     </div>
+                </form>
+                <div class="filter">
+                    <a class="navbar-icon" href="#filter"><i class="fa-solid fa-filter"></i></a>
+                </div>
+            </div>
+            
+            <section class="reci">
+                <%- include('../components/recipe', {recipes: recipes, num: num}) -%>
+            </section>
+            
+        </section>
+
+        <!-- recipes mujmal -->
+        <section class="mujmal-recipes">
+            <div class="mujmal-recipes-wrapper">
+                <div class="mujmal-recipes flex">
+                    <% for (let i = 0; i < 5; i++) { %>
+                    <div class="recipe-itself mujmal-recipe-card flex">
+                        <div class="recipe-itself-image mujmal-recipe-card__image">
+                            <div class="itself-image" style=" <%= "background-image:url(/images/recipes/" + mRecipes[i].img + ".png);" %>" ></div>
+                            <!-- <img src="images/recipes/1.png" alt=""> -->
+                        </div>
+                        <div class="recipe-itself-name mujmal-recipe-card__name">
+                            <p> <%= mRecipes[i].name %> </p>
+                        </div>
+                    </div>
+                    <% }; %>
+                </div>
+            </div>
+        </section>
+
+        <!-- foot -->
+        <%- include("../partials/bodyFooter") -%>

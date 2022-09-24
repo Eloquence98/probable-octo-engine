@@ -1,0 +1,42 @@
+section {
+  margin: auto auto 0;
+  margin-top: 7.5rem;
+  //   margin-left: 100px;
+  //   margin-right: 100px;
+  max-width: 116.75em;
+
+  &.showcase {
+    margin-top: 16.5rem;
+  }
+
+  &.recipe,
+  &.product,
+  &.review,
+  &.contactForm,
+  &.footer-section {
+    margin-top: 14.75rem;
+  }
+  &.footer-section {
+    margin-bottom: 7.25rem;
+  }
+}
+
+.home-page-image-wrapper {
+  height: 55rem;
+  width: 46.25rem;
+  img {
+    width: 100% !important;
+  }
+}
+
+.product__container.grid,
+.recipe__container.grid,
+.review__container.grid {
+  grid-template-columns: 1fr 42%;
+}
+
+.product__container__right,
+.recipe__container__right,
+.review__container__right {
+  justify-self: flex-end;
+}

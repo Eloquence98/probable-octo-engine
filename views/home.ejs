@@ -1,0 +1,44 @@
+
+    <!-- head -->
+    <%- include("partials/header") -%>
+    
+    <!-- navbar -->
+    <%- include("partials/navbar") -%>
+
+    <section class="showcase">
+      <!-- product in showcase -->
+      <% const firstProduct = 0 %> <%- include("components/showcase",
+      {products: products , Product: firstProduct,}) -%>
+    </section>
+
+    <!-- recipe -->
+    <section class="recipe">
+      <div class="title-container">
+        <p class="title">Recipes</p>
+        <div class="pagnitation"></div>
+      </div>
+      <%- include('components/recipe', {recipes: recipes, num: num}) -%>
+    </section>
+
+    <section class="product">
+      <!-- product in products -->
+      <% const secondProduct = 1 %> <%- include("components/product",
+      {products: products , product: secondProduct,}) -%>
+    </section>
+
+    <section class="review">
+      <!-- review -->
+      <%- include("components/review") -%>
+    </section>
+    
+    <section id="contactForm" class="contactForm">
+      <!-- contact-form -->
+      <%- include("components/contactForm") -%>
+    </section>
+    
+    <section class="footer-section">
+      <%- include("components/footer") -%>
+    </section>
+    
+    <!-- head -->
+    <%- include("partials/bodyFooter") -%>

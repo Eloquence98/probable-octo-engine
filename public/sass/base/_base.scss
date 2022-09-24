@@ -1,0 +1,179 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  &:focus {
+    outline: none !important;
+  }
+
+  &:hover {
+    text-decoration: none;
+    color: #fff;
+  }
+}
+
+body {
+  background: $dark;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+button {
+  outline: none !important;
+  border: none;
+  background: transparent;
+
+  &:hover {
+    cursor: pointer;
+  }
+  
+  i {
+    font-size: 2.5rem;
+    color: $gray4;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $light;
+}
+
+html {
+  // this defines what 1rem is
+  font-size: 75%; //1rem = 12, 12/16
+  /* this should work on safari latest version 15.4 (March 14, 2022) */
+  scroll-behavior: smooth;
+}
+
+img {
+  color: $gray4;
+  width: 100%;
+}
+
+label {
+  color: $light;
+  font-family: "Lexend", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height */
+}
+
+input {
+  outline: none;
+  margin: 0;
+
+  &::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.4);
+  }
+  &:-moz-placeholder {
+    color: rgba(255, 255, 255, 0.4);
+  }
+  &::-moz-placeholder {
+    color: rgba(255, 255, 255, 0.4);
+  }
+  &:-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.4);
+  }
+
+  &:focus {
+    border-color: transparent !important;
+
+    &::-webkit-input-placeholder {
+      color: transparent;
+    }
+    &::-webkit-input-placeholder {
+      color: transparent;
+    }
+    &:-moz-placeholder {
+      color: transparent;
+    }
+    &::-moz-placeholder {
+      color: transparent;
+    }
+    &:-ms-input-placeholder {
+      color: transparent;
+    }
+  }
+}
+
+textarea {
+  border: none;
+  outline: none;
+  margin: 0;
+  display: block;
+  resize: none;
+
+  &::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.4);
+  }
+  &:-moz-placeholder {
+    color: rgba(255, 255, 255, 0.4);
+  }
+  &::-moz-placeholder {
+    color: rgba(255, 255, 255, 0.4);
+  }
+  &:-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.4);
+  }
+
+  &:focus {
+    border-color: transparent !important;
+
+    &::-webkit-input-placeholder {
+      color: transparent;
+    }
+    &:-moz-placeholder {
+      color: transparent;
+    }
+    &::-moz-placeholder {
+      color: transparent;
+    }
+    &:-ms-input-placeholder {
+      color: transparent;
+    }
+  }
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+input,
+textarea {
+  box-sizing: border-box;
+
+  width: 100%;
+
+  background: rgba(196, 196, 196, 0.04);
+  border: 2px solid rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(80px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 10px;
+  padding: 1.5rem 1.58rem;
+
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
+
+  color: rgba(255, 255, 255, 0.4);
+}
+
+ul {
+  list-style-type: none;
+}

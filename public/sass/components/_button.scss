@@ -1,0 +1,36 @@
+.buy-button {
+  background: $primary;
+  border-radius: 1rem;
+  color: $dark;
+  display: inline-block;
+  width: 260px;
+  height: 60px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+}
+
+.checkout-button {
+  background: $checkout-button-background;
+  border: 0.1rem solid $checkout-button-border;
+  backdrop-filter: blur(160px);
+  border-radius: 0.9rem;
+  display: inline-block;
+  padding: 10px 16px 7px;
+}
+
+.quantity-button {
+  font-family: serif;
+  font-style: normal;
+  font-size: 2rem;
+  line-height: 1.8rem;
+  background: $checkout-button-background;
+  color: $light;
+  border: 0.2rem solid $checkout-button-border;
+  backdrop-filter: blur(160px);
+  border-radius: 0.3rem;
+  width: 3rem;
+  height: 3rem;
+}

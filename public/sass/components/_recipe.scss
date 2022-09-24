@@ -1,0 +1,36 @@
+.recipe__container {
+  color: $light;
+  margin-top: 3.25rem;
+
+  &__right {
+    &.flex {
+      justify-content: flex-end;
+      margin-right: 8rem;
+    }
+  }
+}
+
+.stats {
+  margin: 2.5rem 0 0;
+  width: 45rem;
+}
+.recipe {
+  &__detail {
+    margin-top: 3.25rem;
+  }
+}
+
+.recipe__detail__tag.flex {
+  justify-content: flex-start;
+  gap: 2.7rem;
+}
+
+// recipes page
+
+.mujmal-recipes {
+  margin-top: 10.75em;
+  
+  &.flex {
+    gap: 50px;
+  }
+}

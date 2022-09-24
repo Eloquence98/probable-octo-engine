@@ -1,0 +1,97 @@
+.showcase__container {
+  color: rgba(255, 255, 255, 0.6);
+
+  &__left.flex {
+    justify-content: flex-end;
+    margin-right: 8rem;
+  }
+}
+
+.product {
+  & .flex {
+    justify-content: flex-start;
+  }
+  &__reviews {
+    margin: 0.8rem 0 0;
+  }
+
+  &__stats {
+    margin: 2.75rem 0 0;
+    width: 45rem;
+  }
+
+  &__buy {
+    margin-top: 4.75rem;
+  }
+
+  &__properties {
+    margin-top: 2.75rem;
+    &.flex {
+      align-items: flex-start;
+      justify-content: flex-start;
+      gap: 7.25rem;
+    }
+  }
+
+  &__cta {
+    margin-top: 58px;
+    &.flex {
+      justify-content: flex-start;
+      gap: 2.5rem;
+    }
+  }
+}
+
+// .product-image {
+//   height: 47.75rem;
+//   width: 43.75rem;
+// }
+
+.quantity-form {
+  color: $light;
+  height: 37.797px;
+  margin-top: 1.7rem;
+  &.flex {
+    gap: 1.7rem;
+  }
+}
+
+.colors {
+  margin-top: 1.7rem;
+  height: 37.797px;
+
+  &.flex {
+    gap: 1.25rem;
+  }
+
+  div {
+    position: relative;
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 50%;
+    background-color: white;
+
+    &.white {
+      background-color: $product-color-light;
+    }
+    &.black {
+      background-color: $product-color-dark;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 36px;
+      height: 36px;
+      background: rgba(20, 20, 20, 0.72);
+
+      transform: translate(24%, 24%);
+
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 50%;
+      z-index: -1;
+    }
+  }
+}
