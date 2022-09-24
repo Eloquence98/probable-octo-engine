@@ -7,9 +7,9 @@
   "scripts": {
     "compile:sass": "sass public/sass/main.scss public/css/styles.css -w",
     "conpile:nodemon": "nodemon app.js",
-    "start": "concurrently \"npm run compile:sass\" \"npm run conpile:nodemon\"",
+    "localStart": "concurrently \"npm run compile:sass\" \"npm run conpile:nodemon\"",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "heroku": "node app.js"
+    "start": "node app.js"
     
   },
   "author": "",
